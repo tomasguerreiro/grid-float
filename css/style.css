@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    width: 100%;
+    position: absolute
+}
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 20px
+}
+
+/*Elements Responsives*/
+
+img,
+embed,
+object,
+video {
+    width: 100%;
+}
+
+/*GRID*/
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    position: relative;
+    float: left;
+    padding: 15px;
+    word-wrap: break-word;
+}
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
+
+/*GRID - Alinhamento Vertical*/
+
+.valign {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+.valign>[class*="col"] {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+/*HEADER AND FOOTER*/
+
+.site-header,
+.site-footer {
+    height: 110px;
+    background: #292b2c;
+    color: #FFF
+}
+
+.site-header nav {
+    text-align: right;
+}
+
+.site-header nav ul li {
+    display: inline-block;
+}
+
+.site-header nav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    vertical-align: middle;
+}
+
+.site-header nav a:hover {
+    color: grey
+}
+
+.no-padding {
+    padding: 0 !important
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-open {
+    display: none
+}
+
+.icon128 {
+    font-size: 128px;
+    padding: 0.3em 0
+}
+
+.icon64 {
+    font-size: 64px;
+    padding: 0.2em 0
+}
+
+.icon32 {
+    font-size: 32px;
+    padding: 0.1em 0
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-right {
+    text-align: right
+}
+
+.site-title {
+    padding: 0.5em 0 !important;
+    border-bottom: 2px solid lightgray;
+    text-align: left;
+    margin: 1.5em 0
+}
+
+@media screen and (max-width: 480px) {
+    [class*="col-"] {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .site-footer>* {
+        display: block !important;
+        width: 100%;
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 925px) {
+    body {
+        margin-top: 60px
+    }
+    .site-header {
+        height: 60px;
+        position: fixed;
+        z-index: 1;
+        top: 0
+    }
+    .nav-open {
+        display: block
+    }
+    #menu-responsive:checked~ul {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    #menu-responsive:checked~.nav-close {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .menu ul {
+        position: fixed;
+        top: 60;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        max-width: 200px;
+        background: #292b2c;
+        color: #FFF;
+        overflow-x: auto;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+        z-index: 2;
+    }
+    .nav-close {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+    .site-header nav ul li {
+        display: block;
+    }
+    .site-header nav ul a {
+        display: block;
+        padding: 20px;
+    }
+}
