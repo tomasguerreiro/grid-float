@@ -239,7 +239,7 @@ video {
     }
     .menu ul {
         position: fixed;
-        top: 60;
+        top: 60px;
         right: 0;
         bottom: 0;
         width: 50%;
