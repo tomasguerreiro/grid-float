@@ -1,6 +1,6 @@
 # grid-float
 
-##Descrição
+## Descrição
 Este projeto demonstra a cosntrução de um grid em CSS e HTML para aplicação em projetos WEB front-end.
 
 ## Notas Importantes
