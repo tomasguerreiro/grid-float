@@ -1,7 +1,9 @@
-# grid-float
+# GRID-FLOAT
+
+LINK PARA O PROJETO: https://tomasguerreiro.github.io/grid-float/
 
 ## Descrição
-Este projeto demonstra a cosntrução de um grid em CSS e HTML para aplicação em projetos WEB front-end.
+Este projeto demonstra a cosntrução de um grid em HTML e CSS usando a propriedade float, para aplicação em projetos WEB front-end.
 
 ## Notas Importantes
 * Feito como parte do programa Nanodegree (IPND) de Udacity de Fundamentos de Web Front-End.
